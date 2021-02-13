@@ -13,7 +13,7 @@ case "$OSKERNEL" in
         fi
 
         case "$ID" in
-            debian|linuxmint )
+            debian|linuxmint|ubuntu )
                 echo "Do you want to install the following packages with apt:"
                 echo "If you installed them already please press C"
                 echo
@@ -114,7 +114,7 @@ function setupgpgagent() {
     case "$OSKERNEL" in
         Linux )
             case "$ID" in
-                debian|linuxmint )
+                debian|linuxmint|ubuntu )
                     sed -i -e 's/#pinentry-program \/usr\/bin\/pinentry-curses/pinentry-program \/usr\/bin\/pinentry-curses/g' ~/.gnupg/gpg-agent.conf
                 * )
                     echo "Please select your pinentry progamm manually by editing ~/.gnupg/gpg-agent.conf"
