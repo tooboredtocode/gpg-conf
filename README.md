@@ -8,7 +8,7 @@ To use run the following command:
 
 ```$ bash <(curl -s https://raw.githubusercontent.com/tooboredtocode/gpg-conf/master/setup.sh)```
 
-## Legal
+---
 
 Copyright (c) 2021 tooboredtocode, Bored Corp.
 
